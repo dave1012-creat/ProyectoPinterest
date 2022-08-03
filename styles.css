@@ -1,0 +1,347 @@
+h4 {
+    color: #ff0000;
+    padding-left: 10px;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+.container {
+  /* background: greenyellow; */
+    display: grid;
+    grid-template-columns: repeat(7, minmax(auto, 165px));
+    grid-template-rows: repeat(6, minmax(auto, 280px));
+    justify-content: center;
+    background-color: #ffffff;
+    height: 350px;
+    padding: 5px;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 40px;
+    color: #FF0000;
+}
+.Logo {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.botonestexto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-left: 16px;
+}
+
+button {
+    margin: 8px;
+    display: flex;
+}
+button:focus-visible {
+    border: none;
+}
+.rojo:hover {
+    background-color: #be0000;
+}
+.gris:hover {
+    background-color: rgb(0, 0, 0, 0.25);
+}
+p {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    color: #262626;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p:hover {
+    text-decoration: underline;    
+    color: #262626;
+}
+
+.rojo {
+    width: auto;
+    height: 50px;
+    padding: 15px;
+    background: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.gris {
+    width: auto;
+    height: 50px;
+    padding: 15px;
+    background: #EFEFEF;
+    color: #262626;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.Titulosaltante {
+    margin-top: 15px;
+}
+h1 {
+    margin: 0px;
+    font-family:"Roboto";
+    font-weight: 500;
+}
+.Estatico {
+    display: flex;
+    justify-content: center;
+    font-family:"Roboto";
+    font-weight:500;
+    font-size: 60px;
+    color: #211922;
+}
+.animado {
+    display: flex;
+    justify-content: center;
+    font-family:"Roboto";
+    font-weight:500;
+    font-size: 60px;
+    color: #211922;
+}
+.degradado{
+    width: 100%;
+    height: 180px;
+    max-height: 20%;
+    position: absolute;
+    margin-top: 20%;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5634628851540616) 83%, rgba(255,255,255,1) 100%);
+}
+.saltarin {
+    position: absolute;   
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    animation-name: salto;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes salto {
+    0% {
+        background-color:rgb(194, 169, 0);
+        transform: translateY(0px);
+        border-radius: 50%;
+    }
+    25% {
+        background-color:rgb(0, 118, 211);;
+        transform: translateY(0x);
+        border-radius: 50%;
+    }
+    50% {
+        background-color:rgb(97, 140, 0);
+        transform: translateY(0px);
+        border-radius: 50%;
+    }
+    100% {
+        background-color:rgb(62, 122, 87);
+        transform: translateY(0px);
+        border-radius: 50%;
+    }
+}
+
+.Cambiante {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: right;
+    margin-bottom: 30px;
+}
+li {
+    width: 22px;
+    height: 22px;
+}
+.buttongris1, .buttongris2, .buttongris3, .buttongris4 {
+    margin: 2px;
+    list-style: none;
+    font-size: 10px;
+    color: #e1e1e1;
+}
+.botton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.pucha {
+    display: flex;
+    justify-content: center;
+    margin-top: px;
+}
+
+.base {
+    font-size: 60px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.first{
+    color: rgb(194, 169, 0);
+    animation-name: firstAnimation;
+}
+
+.second {
+    color: rgb(0, 118, 211);
+    animation-name: secondAnimation;
+}
+
+.tres{
+    color: rgb(97, 140, 0);
+    animation-name: tresAnimacion;
+}
+
+.cuatro {
+    color: rgb(62, 122, 87);
+    animation-name: cuatroAnimacion;
+}
+
+@keyframes firstAnimation {
+    0% {
+        transform: translateY(40px);
+    }
+    12% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes secondAnimation {
+    25% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    32% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes tresAnimacion {
+    50% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    62% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes cuatroAnimacion {
+    75% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    87% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+.height1 {
+    background-image: url(https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/amp_metadata_content_image_min_696px_wide/public/feature/images/graphic_design_cover.jpg?itok=LG6vRAt6);
+    background-size: cover;    
+    height: 350px;
+    width: 236px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+.height2 {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/6bxva8DmZvNj8kaVrQZZMP.jpg);
+    background-size: cover;    
+    height: 350px;
+    width: 236px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.height3 {
+    background-image: url(https://www.careeraddict.com/uploads/article/58744/illustration-man-woman-design-large-computer-screen.jpg);
+    background-size: cover;    
+    height: 350px;
+    width: 236px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 14px;
+}
+
+.height4 {
+    background-image: url(https://i.pinimg.com/736x/f0/6a/13/f06a13da40014d72d11bf6fddea40c28.jpg);
+    background-size: cover;    
+    height: 350px;
+    width: 236px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.height5 {
+    background-image: url(https://sufio.com/content/media/images/Inspirationa-chocolate-packaging-designs-feat.width-1440.jpg);
+    background-size: cover;    
+    height: 350px;
+    width: 236px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
